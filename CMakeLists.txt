@@ -3,6 +3,7 @@ project(Server)
 
 set(CMAKE_CXX_STANDARD 23)
 
+
 add_executable(Server main.cpp
         MessageQueue/IMessageQueue.h
         MessageQueue/MessageQueue.cpp
