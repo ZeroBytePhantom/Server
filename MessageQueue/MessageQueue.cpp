@@ -5,10 +5,6 @@
 #include "MessageQueue.h"
 
 
-MessageQueue::~MessageQueue() {
-
-}
-
 
 void MessageQueue::addMessage(const Message& msg) {
     inbox[msg.recipientId].push_back(std::make_shared<Message>(msg));

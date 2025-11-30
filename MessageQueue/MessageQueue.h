@@ -17,7 +17,7 @@ private:
 
 public:
     MessageQueue() = default;
-    ~MessageQueue() override;
+    ~MessageQueue() override = default;
 
     void addMessage(const Message& msg) override;
     void ackMessage(const int recipient) override;
